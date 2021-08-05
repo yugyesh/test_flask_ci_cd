@@ -86,7 +86,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          aws-region: ap-northeast-2
 
       # Create the Elastic Beanstalk application
       - name: Create EBS application
@@ -97,4 +97,4 @@ jobs:
       # (eb use test-environment && eb status test-environment && eb deploy) || eb create test-environment
       - name: Create test environment & deploy
         run: |
-          (eb use test-environment && eb status test-environment && eb deploy)
+          (eb use Intelligencev1-env && eb status Intelligencev1-env && eb deploy)
