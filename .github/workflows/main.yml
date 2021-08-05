@@ -97,4 +97,4 @@ jobs:
       # (eb use test-environment && eb status test-environment && eb deploy) || eb create test-environment
       - name: Create test environment & deploy
         run: |
-          (eb use intelligencev1-env && eb status intelligencev1-env && eb deploy) || eb create intelligencev1-env
+          (eb use intelligencev2-env && eb status intelligencev2-env && eb deploy) || eb create intelligencev2-env
